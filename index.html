@@ -137,6 +137,7 @@
 <form name="partner-dd" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
 
   <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
+  <input type="hidden" name="_redirect" value="/thank-you.html">
 
   <div class="container">
 
@@ -172,7 +173,7 @@
           </div>
           <div class="field">
             <label>Website <span class="required">*</span></label>
-            <input type="url" name="website" placeholder="https://yourcompany.com" required>
+            <input type="text" name="website" placeholder="e.g. yourcompany.com" pattern="^(https?:\/\/)?(www\.)?[a-zA-Z0-9-]+(\.[a-zA-Z]{2,})+.*$" title="Please enter a valid website (e.g. yourcompany.com)" required>
           </div>
           <div class="field">
             <label>App Store Links <span class="required">*</span></label>
