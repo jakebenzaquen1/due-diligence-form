@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You — ProphetX</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f9;
+    color: #1a1a2e;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    background: linear-gradient(135deg, #14532d 0%, #166534 100%);
+    padding: 28px 48px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .header-logo {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: white;
+    text-decoration: none;
+  }
+  .header-logo span { color: #a5b4fc; }
+
+  .main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 24px;
+  }
+
+  .card {
+    background: white;
+    border-radius: 20px;
+    padding: 56px 48px;
+    max-width: 560px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  }
+
+  .checkmark {
+    width: 72px;
+    height: 72px;
+    background: linear-gradient(135deg, #16a34a, #15803d);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 28px;
+    font-size: 32px;
+    animation: pop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  }
+
+  @keyframes pop {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+  .card h1 {
+    font-size: 26px;
+    font-weight: 800;
+    color: #1a1a2e;
+    margin-bottom: 14px;
+    letter-spacing: -0.5px;
+  }
+
+  .card p {
+    font-size: 15px;
+    color: #6b7280;
+    line-height: 1.7;
+    margin-bottom: 10px;
+  }
+
+  .card p strong { color: #374151; }
+
+  .divider {
+    border: none;
+    border-top: 1px solid #f0f2f8;
+    margin: 28px 0;
+  }
+
+  .next-steps {
+    background: #fafbff;
+    border: 1px solid #e8eaf2;
+    border-radius: 12px;
+    padding: 20px 24px;
+    text-align: left;
+    margin-bottom: 28px;
+  }
+  .next-steps h3 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #374151;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 14px;
+  }
+  .step {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .step:last-child { margin-bottom: 0; }
+  .step-num {
+    width: 22px; height: 22px;
+    background: linear-gradient(135deg, #16a34a, #15803d);
+    color: white;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .step-text { font-size: 13px; color: #4b5563; line-height: 1.5; }
+
+  .contact-line {
+    font-size: 13px;
+    color: #9ca3af;
+  }
+  .contact-line a {
+    color: #16a34a;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .contact-line a:hover { text-decoration: underline; }
+
+  .footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 12px;
+    color: #9ca3af;
+  }
+
+  @media (max-width: 600px) {
+    .card { padding: 40px 24px; }
+    .header { padding: 20px 24px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-logo">Prophet<span>X</span></div>
+</div>
+
+<div class="main">
+  <div class="card">
+
+    <div class="checkmark">✓</div>
+
+    <h1>Submission Received</h1>
+    <p>Thank you for completing the ProphetX Partner Due Diligence form. We've received your information and our team will be in touch shortly.</p>
+
+    <hr class="divider">
+
+    <div class="next-steps">
+      <h3>What happens next</h3>
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-text"><strong>Review</strong> — Our partnerships team will review your submission within <strong>3–5 business days</strong>.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-text"><strong>Follow-up</strong> — We may reach out to the contacts provided if we need any clarification.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-text"><strong>Next steps</strong> — If there's a mutual fit, we'll schedule an intro call to discuss the partnership in detail.</div>
+      </div>
+    </div>
+
+    <p class="contact-line">Questions? Reach us at <a href="mailto:hello@betprophet.co">hello@betprophet.co</a></p>
+
+  </div>
+</div>
+
+<div class="footer">
+  © 2026 ProphetX. All rights reserved. Information submitted is treated as strictly confidential.
+</div>
+
+</body>
+</html>
