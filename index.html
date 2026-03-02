@@ -134,10 +134,8 @@
   <p>Please complete all fields as accurately as possible. All information is treated as strictly confidential and used solely for partnership evaluation purposes.</p>
 </div>
 
-<!-- Netlify form detection: name + netlify attributes are required -->
 <form name="partner-dd" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
 
-  <!-- Honeypot field to block spam (hidden from users) -->
   <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
 
   <div class="container">
@@ -154,38 +152,38 @@
       <div class="section-body">
         <div class="field-grid">
           <div class="field">
-            <label for="legalName">Legal Entity Name <span class="required">*</span></label>
-            <input type="text" id="legalName" name="legal-entity-name" placeholder="e.g. Acme Corp LLC" required>
+            <label>Legal Entity Name <span class="required">*</span></label>
+            <input type="text" name="legal-entity-name" placeholder="e.g. Acme Corp LLC" required>
           </div>
           <div class="field">
-            <label for="jurisdiction">Jurisdiction of Incorporation <span class="required">*</span></label>
-            <input type="text" id="jurisdiction" name="jurisdiction" placeholder="e.g. Delaware, USA" required>
+            <label>Jurisdiction of Incorporation <span class="required">*</span></label>
+            <input type="text" name="jurisdiction" placeholder="e.g. Delaware, USA" required>
           </div>
           <div class="field">
-            <label for="yearFounded">Year Founded</label>
-            <input type="number" id="yearFounded" name="year-founded" placeholder="e.g. 2019" min="1900" max="2026">
+            <label>Year Founded <span class="required">*</span></label>
+            <input type="number" name="year-founded" placeholder="e.g. 2019" min="1900" max="2026" required>
           </div>
           <div class="field">
-            <label for="numEmployees">Number of Employees</label>
-            <select id="numEmployees" name="num-employees">
+            <label>Number of Employees <span class="required">*</span></label>
+            <select name="num-employees" required>
               <option value="">Select range</option>
               <option>1–10</option><option>11–50</option><option>51–200</option><option>201–500</option><option>500+</option>
             </select>
           </div>
           <div class="field">
-            <label for="website">Website</label>
-            <input type="url" id="website" name="website" placeholder="https://yourcompany.com">
+            <label>Website <span class="required">*</span></label>
+            <input type="url" name="website" placeholder="https://yourcompany.com" required>
           </div>
           <div class="field">
-            <label for="appLinks">App Store Links</label>
-            <input type="text" id="appLinks" name="app-links" placeholder="iOS / Android URLs">
+            <label>App Store Links <span class="required">*</span></label>
+            <input type="text" name="app-links" placeholder="iOS / Android URLs" required>
           </div>
         </div>
         <hr class="divider">
         <div class="field-grid single">
           <div class="field">
-            <label for="markets">Primary Markets / Geographies <span class="required">*</span></label>
-            <input type="text" id="markets" name="primary-markets" placeholder="e.g. USA (NJ, PA, MI), Canada (Ontario)" required>
+            <label>Primary Markets / Geographies <span class="required">*</span></label>
+            <input type="text" name="primary-markets" placeholder="e.g. USA (NJ, PA, MI), Canada (Ontario)" required>
           </div>
           <div class="field">
             <label>Primary Revenue Model <span class="required">*</span></label>
@@ -198,8 +196,8 @@
             </div>
           </div>
           <div class="field">
-            <label for="revenueNotes">Revenue Model Notes</label>
-            <textarea id="revenueNotes" name="revenue-model-notes" placeholder="Any additional context on your business model..."></textarea>
+            <label>Revenue Model Notes <span class="required">*</span></label>
+            <textarea name="revenue-model-notes" placeholder="Any additional context on your business model..." required></textarea>
           </div>
         </div>
       </div>
@@ -230,24 +228,16 @@
             <input type="text" name="annual-revenue" placeholder="e.g. $5,000,000" required>
           </div>
           <div class="field">
-            <label>Revenue — Most Recent Quarter</label>
-            <input type="text" name="recent-quarter-revenue" placeholder="e.g. $1,500,000">
-          </div>
-          <div class="field">
-            <label>Current Runway</label>
-            <select name="current-runway">
-              <option value="">Select range</option>
-              <option>Less than 6 months</option><option>6–12 months</option><option>12–18 months</option>
-              <option>18–24 months</option><option>24+ months</option><option>Profitable / not applicable</option>
-            </select>
+            <label>Revenue — Most Recent Quarter <span class="required">*</span></label>
+            <input type="text" name="recent-quarter-revenue" placeholder="e.g. $1,500,000" required>
           </div>
           <div class="field">
             <label>Total Fundraising to Date <span class="required">*</span></label>
             <input type="text" name="total-fundraising" placeholder="e.g. $12,000,000" required>
           </div>
           <div class="field">
-            <label>Most Recent Round (Stage + Amount)</label>
-            <input type="text" name="most-recent-round" placeholder="e.g. Series A — $8M (March 2024)">
+            <label>Most Recent Round (Stage + Amount) <span class="required">*</span></label>
+            <input type="text" name="most-recent-round" placeholder="e.g. Series A — $8M (March 2024)" required>
           </div>
         </div>
       </div>
@@ -277,25 +267,25 @@
         <hr class="divider">
         <div class="field-grid">
           <div class="field">
-            <label>Total Registered Users</label>
-            <input type="text" name="total-registered-users" placeholder="e.g. 500,000">
+            <label>Total Registered Users <span class="required">*</span></label>
+            <input type="text" name="total-registered-users" placeholder="e.g. 500,000" required>
           </div>
           <div class="field">
-            <label>Monthly Retention Rate</label>
-            <input type="text" name="monthly-retention" placeholder="e.g. 65%">
+            <label>Monthly Retention Rate <span class="required">*</span></label>
+            <input type="text" name="monthly-retention" placeholder="e.g. 65%" required>
           </div>
           <div class="field">
-            <label>Average Age Range of User Base</label>
-            <input type="text" name="avg-age-range" placeholder="e.g. 21–35 primary, 35–50 secondary">
+            <label>Average Age Range of User Base <span class="required">*</span></label>
+            <input type="text" name="avg-age-range" placeholder="e.g. 21–35 primary, 35–50 secondary" required>
           </div>
           <div class="field">
-            <label>% US-Based Users</label>
-            <input type="text" name="us-based-pct" placeholder="e.g. 80%">
+            <label>% US-Based Users <span class="required">*</span></label>
+            <input type="text" name="us-based-pct" placeholder="e.g. 80%" required>
           </div>
         </div>
         <hr class="divider">
         <div class="field">
-          <label>Platforms</label>
+          <label>Platforms <span class="required">*</span></label>
           <div class="checkbox-group" style="flex-direction:row;flex-wrap:wrap;">
             <label><input type="checkbox" name="platforms" value="iOS"> iOS</label>
             <label><input type="checkbox" name="platforms" value="Android"> Android</label>
@@ -319,8 +309,8 @@
             <textarea name="licenses-held" placeholder="List all licenses, including jurisdiction and license number. If none, state 'None.'" required></textarea>
           </div>
           <div class="field">
-            <label>Pending License Applications</label>
-            <textarea name="pending-licenses" placeholder="List any in-progress applications, jurisdiction and expected timeline."></textarea>
+            <label>Pending License Applications <span class="required">*</span></label>
+            <textarea name="pending-licenses" placeholder="List any in-progress applications, jurisdiction and expected timeline. If none, state 'None.'" required></textarea>
           </div>
         </div>
         <hr class="divider">
@@ -345,8 +335,8 @@
         <hr class="divider">
         <div class="field-grid single">
           <div class="field">
-            <label>Brief Description of KYC/AML & RG Programs</label>
-            <textarea name="kyc-rg-description" placeholder="Describe your approach to player verification, age gating, deposit limits, self-exclusion, etc."></textarea>
+            <label>Brief Description of KYC/AML & RG Programs <span class="required">*</span></label>
+            <textarea name="kyc-rg-description" placeholder="Describe your approach to player verification, age gating, deposit limits, self-exclusion, etc." required></textarea>
           </div>
           <div class="field">
             <label>Regulatory Actions, Fines, or Investigations (Past 3 Years) <span class="required">*</span></label>
@@ -365,36 +355,28 @@
       <div class="section-body">
         <div class="field-grid single">
           <div class="field">
-            <label>Tech Stack (High Level)</label>
-            <input type="text" name="tech-stack" placeholder="e.g. React Native (mobile), Node.js / AWS (backend)">
+            <label>Tech Stack (High Level) <span class="required">*</span></label>
+            <input type="text" name="tech-stack" placeholder="e.g. React Native (mobile), Node.js / AWS (backend)" required>
           </div>
         </div>
         <hr class="divider">
         <div class="field-grid">
           <div class="field">
-            <label>API Capabilities</label>
+            <label>API Capabilities <span class="required">*</span></label>
             <div class="radio-group">
-              <label><input type="radio" name="api-capabilities" value="Full REST API"> Full REST API</label>
+              <label><input type="radio" name="api-capabilities" value="Full REST API" required> Full REST API</label>
               <label><input type="radio" name="api-capabilities" value="Partial/In Dev"> Partial / In Dev</label>
               <label><input type="radio" name="api-capabilities" value="No API"> No API</label>
             </div>
           </div>
           <div class="field">
-            <label>Existing Third-Party Integrations</label>
-            <input type="text" name="existing-integrations" placeholder="e.g. Kambi, Sportech, Paysafe, Plaid">
-          </div>
-          <div class="field">
-            <label>Historical Uptime (Past 12 Months)</label>
-            <input type="text" name="historical-uptime" placeholder="e.g. 99.7%">
-          </div>
-          <div class="field">
-            <label>SLA Uptime Commitment</label>
-            <input type="text" name="sla-uptime" placeholder="e.g. 99.5%">
+            <label>Existing Third-Party Integrations <span class="required">*</span></label>
+            <input type="text" name="existing-integrations" placeholder="e.g. Kambi, Sportech, Paysafe, Plaid" required>
           </div>
         </div>
         <hr class="divider">
         <div class="field">
-          <label>Data Security Certifications</label>
+          <label>Data Security Certifications <span class="required">*</span></label>
           <div class="checkbox-group" style="flex-direction:row;flex-wrap:wrap;">
             <label><input type="checkbox" name="security-certs" value="SOC 2 Type I"> SOC 2 Type I</label>
             <label><input type="checkbox" name="security-certs" value="SOC 2 Type II"> SOC 2 Type II</label>
@@ -406,48 +388,7 @@
       </div>
     </div>
 
-    <!-- 6. Commercial & Legal -->
-    <div class="section">
-      <div class="section-header">
-        <div class="section-icon" style="background:#fce7f3;">📋</div>
-        <div><h2>Commercial & Legal</h2><p>Partnerships, IP, and legal standing</p></div>
-      </div>
-      <div class="section-body">
-        <div class="field-grid single">
-          <div class="field">
-            <label>Existing Partner / Integration Agreements</label>
-            <textarea name="existing-partners" placeholder="List current material partnerships, especially any exclusivity arrangements."></textarea>
-          </div>
-          <div class="field">
-            <label>Pending or Ongoing Litigation <span class="required">*</span></label>
-            <textarea name="pending-litigation" placeholder="Disclose any material pending or ongoing litigation. If none, state 'None.'" required></textarea>
-          </div>
-          <div class="field">
-            <label>Data Privacy Compliance</label>
-            <div class="checkbox-group" style="flex-direction:row;flex-wrap:wrap;">
-              <label><input type="checkbox" name="data-privacy" value="GDPR"> GDPR</label>
-              <label><input type="checkbox" name="data-privacy" value="CCPA"> CCPA</label>
-              <label><input type="checkbox" name="data-privacy" value="COPPA"> COPPA</label>
-              <label><input type="checkbox" name="data-privacy" value="Other"> Other</label>
-            </div>
-          </div>
-          <div class="field">
-            <label>IP Ownership</label>
-            <div class="radio-group">
-              <label><input type="radio" name="ip-ownership" value="Full"> Company owns all core IP outright</label>
-              <label><input type="radio" name="ip-ownership" value="Partial"> Some third-party licensed IP</label>
-              <label><input type="radio" name="ip-ownership" value="Other"> Other</label>
-            </div>
-          </div>
-          <div class="field">
-            <label>IP Notes</label>
-            <textarea name="ip-notes" placeholder="Any additional context on IP ownership or licensing..."></textarea>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 7. Key Contacts -->
+    <!-- 6. Key Contacts -->
     <div class="section">
       <div class="section-header">
         <div class="section-icon" style="background:#f3e8ff;">👤</div>
@@ -460,43 +401,30 @@
             <input type="text" name="biz-contact-name" placeholder="Full name" required>
           </div>
           <div class="field">
-            <label>Title / Role</label>
-            <input type="text" name="biz-contact-title" placeholder="e.g. VP Partnerships">
+            <label>Title / Role <span class="required">*</span></label>
+            <input type="text" name="biz-contact-title" placeholder="e.g. VP Partnerships" required>
           </div>
           <div class="field">
             <label>Business Contact Email <span class="required">*</span></label>
             <input type="email" name="biz-contact-email" placeholder="name@company.com" required>
           </div>
           <div class="field">
-            <label>Business Contact Phone</label>
-            <input type="tel" name="biz-contact-phone" placeholder="+1 (000) 000-0000">
+            <label>Business Contact Phone <span class="required">*</span></label>
+            <input type="tel" name="biz-contact-phone" placeholder="+1 (000) 000-0000" required>
           </div>
           <div class="field">
-            <label>Technical Contact Name</label>
-            <input type="text" name="tech-contact-name" placeholder="Full name">
+            <label>Technical Contact Name <span class="required">*</span></label>
+            <input type="text" name="tech-contact-name" placeholder="Full name" required>
           </div>
           <div class="field">
-            <label>Technical Contact Email</label>
-            <input type="email" name="tech-contact-email" placeholder="name@company.com">
+            <label>Technical Contact Email <span class="required">*</span></label>
+            <input type="email" name="tech-contact-email" placeholder="name@company.com" required>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- 8. Additional Comments -->
-    <div class="section">
-      <div class="section-header">
-        <div class="section-icon" style="background:#f1f5f9;">💬</div>
-        <div><h2>Additional Comments</h2></div>
-      </div>
-      <div class="section-body">
-        <div class="field">
-          <textarea name="additional-comments" style="min-height:100px;" placeholder="Any additional context or information relevant to the partnership evaluation..."></textarea>
-        </div>
-      </div>
-    </div>
-
-  </div><!-- end container -->
+  </div>
 
   <div class="submit-bar">
     <button type="submit" class="btn-primary">Submit Due Diligence →</button>
